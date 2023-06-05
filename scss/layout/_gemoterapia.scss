@@ -1,0 +1,169 @@
+/*  - GEMOTERAPIA ----------------------------------------------------*/
+
+.gemo {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/gemas/caratula3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+.gemo__title {
+    
+    width: 300px;
+    height: auto;
+    text-shadow: #Fff 1px 0 15px;
+    border-radius: 5%;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    background: #33313b80;
+    
+
+}
+.gemas {
+    width: 100%;
+    font-size: 25px;
+    } 
+
+.geo {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5em;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.astro-def {
+    padding: 20px 20px 0 0;
+}
+
+.tarjeta {
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    flex-basis: 280px;
+    max-width: 250px;
+    flex-grow: 1;
+    }
+
+.tarjeta-img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 100%;
+    
+}
+
+.tarjeta-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter:blur(5px);
+    border-radius: 100%;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.5s;
+    
+    
+}
+.tarjeta:hover .tarjeta-body {
+    right: 0;
+}
+
+.tarjeta-title , .tarjeta-body {
+    text-align: center;
+}
+.tarjeta-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+.tarjeta-sub-title {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 300;
+}
+.tarjeta-info {
+    font-size: 12px;
+    
+}
+.tarjeta-btn {
+    color: #1f3d47;
+    background: #8fabba70;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.articulo-gemas {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+.escrito {
+    background-color: #494852;
+    border-radius: 5%;
+    color: beige;
+   
+}
+.video {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px 0 0 40px;
+    gap: 2.5em;
+}
+
+/*media query*/
+@media only screen and (max-width:1000px) {
+
+.articulo-gemas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.escrito {
+    border-radius: 0;
+}
+.video {
+    display: flex;
+    width: 70%;
+    padding: 20px 0 0 40px;
+    }
+}
+@media only screen and (max-width:450px){
+    .escrito {
+        font-size: 12px;
+    }
+    .video {
+        width: 90%;
+        justify-content: center;
+        padding: 20px 0 0 0 ;
+    }
+}

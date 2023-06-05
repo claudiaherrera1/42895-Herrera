@@ -1,0 +1,33 @@
+/* Contacto----------------------------------------------------------- */
+
+.contacto {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/mapa.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.formulario {
+    width: 50%;
+    padding: 40px;
+}
+
+.nav-contact link {
+    color: #000;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: left;
+    padding: 30px ;
+}
+@media only screen and (max-width:600px) {
+    .formulario {
+        width: 70%;
+    }
+}

@@ -1,0 +1,22 @@
+.parallax-tres {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 450px;
+    background-image: url("/images/fondoindex3.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+.redes img {
+    padding: 25px;
+}
+
+.copy {
+    height: 50px;
+    background-color: #2a2626;
+    text-align: center;
+    color: beige;
+}
