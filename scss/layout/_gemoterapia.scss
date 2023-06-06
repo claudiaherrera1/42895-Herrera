@@ -12,10 +12,7 @@
     justify-content: center;
     text-align: center;
     
-    
-}
-.gemo__title {
-    
+    &__title{
     width: 300px;
     height: auto;
     text-shadow: #Fff 1px 0 15px;
@@ -25,9 +22,9 @@
     top: 40%;
     right: 5%;
     background: #33313b80;
-    
-
+    }
 }
+
 .gemas {
     width: 100%;
     font-size: 25px;
