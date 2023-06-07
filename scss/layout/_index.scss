@@ -47,13 +47,14 @@ h2 {
 }
 }
 
-.text-present {
+.novedades__texto {
     font-size: 20px;
     color: beige;
     padding: 20px;
 }
 
 .cards {
+    border: 2px solid red;
     display: flex;
     height: 800px;
     background-image: url("/images/fondoindex9.jpg");
@@ -78,6 +79,7 @@ h2 {
 }
 
 .card-group {
+    border: 2px solid green;
     width: 85%;
     height: 80%;
     display: flex;
@@ -86,6 +88,7 @@ h2 {
 }
 
 .card {
+    border: 2px solid blue;
     background-color: #5a0d0d8b;
     
     img {
