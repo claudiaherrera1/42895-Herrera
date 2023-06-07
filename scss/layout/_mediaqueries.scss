@@ -20,17 +20,18 @@
         flex-direction: column;
         height: auto;
         justify-content: center;
+
+        &__texto {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__title {
+            width: 100%;
+            text-align: center;
+        }
     }
 
-    .bienvenida__texto {
-        width: 100%;
-        text-align: center;
-    }
-
-    .bienvenida__title {
-        width: 100%;
-        text-align: center;
-    }
     .cards h2 {
         font-size: 20px;
     }
@@ -123,10 +124,12 @@
         display: grid;
         height: auto;
         place-items: center;
-        }
-
-    .articulo img {
-        padding: 0px
+        img {
+            padding: 0px
+            }
+        p {
+            font-size: 10px;
+            }       
         }
 
     .separador {
@@ -144,10 +147,35 @@
         height: 150px;
         padding: 0 0 30px 0;
         }   
-
-    .articulo p {
-        font-size: 10px;
-    }    
 }
 
 /* -----  ----FINAL ASTROLOGIA QUERYS--------------------------------*/
+
+/*media query GEMOTERAPIA*/
+@media only screen and (max-width:1000px) {
+
+    .articulo-gemas {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &__cuerpo {
+            border-radius: 0;
+        }
+        &__video {
+            display: flex;
+            width: 70%;
+            padding: 20px 0 0 40px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width:450px){
+        .articulo-gemas__cuerpo {
+            font-size: 12px;
+        }
+        .articulo-gemas__video {
+            width: 90%;
+            justify-content: center;
+            padding: 20px 0 0 0 ;
+        }
+    }

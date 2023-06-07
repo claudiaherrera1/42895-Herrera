@@ -10,11 +10,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &__frase {
+        color: #1d1d1da9;
     }
-    
-.bienvenida__frase {
-    color:#1d1d1da9;
 }
+
 
 .separador {
     display: flex;
@@ -45,10 +46,10 @@
     img {
         padding: 30px
     }
-}
 
-.articulo__cuerpo {
-    padding: 30px;
+    &__cuerpo {
+        padding: 30px;
+    }
 }
 
 .articulos {
@@ -59,16 +60,16 @@
     background: #33313B;
     text-align: center;
     padding: 1.5em;
-}
 
-.articulos__esferas img {
-    width: 100px;
-    margin: 5px -15px;
-}
+    &__esferas img {
+        width: 100px;
+        margin: 5px -15px;
+    }
 
-.articulos__esferas img:hover {
-    transform: transltaleY(-30px);
-    scale: 1.4;
-    transition: all 0.35s ease;
-}
+    &__esferas img:hover {
+        transform: transltaleY(-30px);
+        scale: 1.4;
+        transition: all 0.35s ease;
+    }
 
+}

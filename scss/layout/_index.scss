@@ -9,14 +9,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.bienvenida__index__texto {
-    padding: 18px;
-    width: 500px;
-    text-align: center;
-    color: beige;
-    font-size: 20px;
+    &__texto {
+        padding: 18px;
+        width: 500px;
+        text-align: center;
+        color: beige;
+        font-size: 20px;
+    }
 }
 
 h1 {
@@ -43,16 +42,15 @@ h2 {
     background-color: #102233;
     color: #dbe1e1;
     }
-}
 
-.separador__texto {
-    font-size: 20px;
-    color: beige;
-    padding: 20px;
+    &__texto {
+        font-size: 20px;
+        color: beige;
+        padding: 20px;
+    }
 }
 
 .cards {
-    
     display: flex;
     height: 800px;
     background-image: url("/images/fondoindex9.jpg");
@@ -73,7 +71,6 @@ h2 {
 }
 
 .card-group {
-    
     width: 85%;
     height: auto;
     display: flex;
