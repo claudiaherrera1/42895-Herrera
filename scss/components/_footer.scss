@@ -1,4 +1,4 @@
-.parallax-tres {
+.pie {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -8,10 +8,9 @@
     background-size: cover;
     background-position: center;
     padding: 50px;
-}
-
-.redes img {
+    &__redes img {
     padding: 25px;
+    }
 }
 
 .copy {

@@ -1,6 +1,6 @@
 /*  - GEMOTERAPIA ----------------------------------------------------*/
 
-.gemo {
+.bienvenida__gemo {
     width: 100%;
     height: 100vh;
     background-image: url("../images/gemas/caratula3.jpg");
@@ -12,7 +12,7 @@
     justify-content: center;
     text-align: center;
     
-    &__title{
+    .bienvenida__gemo__title {
     width: 300px;
     height: auto;
     text-shadow: #Fff 1px 0 15px;
@@ -39,11 +39,18 @@
     padding: 20px;
     flex-wrap: wrap;
 }
-.astro-def {
+
+.botiquin {
     padding: 20px 20px 0 0;
 }
 
-.tarjeta {
+.botiquin__texto {
+    font-size: 20px;
+    color: beige;
+    padding: 20px;
+}
+
+.geo__tarjeta {
     border-radius: 100%;
     overflow: hidden;
     position: relative;
@@ -53,7 +60,7 @@
     flex-grow: 1;
     }
 
-.tarjeta-img {
+.geo__tarjeta img {
     width: 100%;
     height:100%;
     object-fit: cover;
@@ -61,7 +68,7 @@
     
 }
 
-.tarjeta-body {
+.geo__tarjeta__cuerpo {
     width: 100%;
     height: 100%;
     top: 0;
@@ -79,28 +86,28 @@
     
     
 }
-.tarjeta:hover .tarjeta-body {
+.geo__tarjeta:hover .geo__tarjeta__cuerpo {
     right: 0;
 }
 
-.tarjeta-title , .tarjeta-body {
+.geo__tarjeta__cuerpo__titulo , .geo__tarjeta__cuerpo {
     text-align: center;
 }
-.tarjeta-title {
+.geo__tarjeta__cuerpo__titulo {
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 500;
 }
-.tarjeta-sub-title {
+.geo__tarjeta__cuerpo__subtitulo {
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 300;
 }
-.tarjeta-info {
+.geo__tarjeta__cuerpo__info {
     font-size: 12px;
     
 }
-.tarjeta-btn {
+.geo__tarjeta__cuerpo__btn {
     color: #1f3d47;
     background: #8fabba70;
     padding: 5px 10px;
@@ -122,13 +129,16 @@
     
 
 }
-.escrito {
+.articulo-gemas__cuerpo {
     background-color: #494852;
     border-radius: 5%;
     color: beige;
-   
+    padding: 20px;
+    gap: 20px;
 }
-.video {
+
+   
+.articulo-gemas__video {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -145,20 +155,20 @@
     width: 100%;
     
 }
-.escrito {
+.articulo-gemas__cuerpo {
     border-radius: 0;
 }
-.video {
+.articulo-gemas__video {
     display: flex;
     width: 70%;
     padding: 20px 0 0 40px;
     }
 }
 @media only screen and (max-width:450px){
-    .escrito {
+    .articulo-gemas__cuerpo {
         font-size: 12px;
     }
-    .video {
+    .articulo-gemas__video {
         width: 90%;
         justify-content: center;
         padding: 20px 0 0 0 ;
