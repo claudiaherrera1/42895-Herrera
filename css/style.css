@@ -17,6 +17,21 @@ body {
   background-color: #33313b;
 }
 
+.d-bienv, .contacto, .bienvenida__gemo, .bienvenida__astro, .bienvenida__index {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.d-flex, .bienvenida__gemo, .bienvenida__astro, .bienvenida__index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .pie {
   display: flex;
   justify-content: center;
@@ -40,18 +55,8 @@ body {
 }
 
 .bienvenida__index {
-  width: 100%;
-  height: 100vh;
   background-image: url("/images/fondo12.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
 .bienvenida__index__texto {
   padding: 18px;
   width: 500px;
@@ -84,7 +89,6 @@ h2 {
   background-color: #102233;
   color: #dbe1e1;
 }
-
 .separador__texto {
   font-size: 20px;
   color: beige;
@@ -98,6 +102,7 @@ h2 {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
 }
@@ -142,19 +147,9 @@ h2 {
 
 /*.....ASTROLOGÍA.......*/
 .bienvenida__astro {
-  width: 100%;
-  height: 100vh;
   background-image: url("../images/fondoindex6.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-
-.bienvenida__frase {
+.bienvenida__astro__frase {
   color: rgba(29, 29, 29, 0.662745098);
 }
 
@@ -180,13 +175,13 @@ h2 {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
 }
 .articulo img {
   padding: 30px;
 }
-
 .articulo__cuerpo {
   padding: 30px;
 }
@@ -200,12 +195,10 @@ h2 {
   text-align: center;
   padding: 1.5em;
 }
-
 .articulos__esferas img {
   width: 100px;
   margin: 5px -15px;
 }
-
 .articulos__esferas img:hover {
   transform: transltaleY(-30px);
   scale: 1.4;
@@ -214,18 +207,9 @@ h2 {
 
 /*  - GEMOTERAPIA ----------------------------------------------------*/
 .bienvenida__gemo {
-  width: 100%;
-  height: 100vh;
   background-image: url("../images/gemas/caratula3.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
-.bienvenida__gemo .bienvenida__gemo__title {
+.bienvenida__gemo__title {
   width: 300px;
   height: auto;
   text-shadow: #Fff 1px 0 15px;
@@ -251,17 +235,6 @@ h2 {
   padding: 20px;
   flex-wrap: wrap;
 }
-
-.botiquin {
-  padding: 20px 20px 0 0;
-}
-
-.botiquin__texto {
-  font-size: 20px;
-  color: beige;
-  padding: 20px;
-}
-
 .geo__tarjeta {
   border-radius: 100%;
   overflow: hidden;
@@ -271,14 +244,15 @@ h2 {
   max-width: 250px;
   flex-grow: 1;
 }
-
 .geo__tarjeta img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 100%;
 }
-
+.geo__tarjeta:hover {
+  right: 0;
+}
 .geo__tarjeta__cuerpo {
   width: 100%;
   height: 100%;
@@ -294,32 +268,25 @@ h2 {
   flex-direction: column;
   justify-content: center;
   transition: 1.5s;
-}
-
-.geo__tarjeta:hover .geo__tarjeta__cuerpo {
-  right: 0;
-}
-
-.geo__tarjeta__cuerpo__titulo, .geo__tarjeta__cuerpo {
   text-align: center;
 }
-
+.geo__tarjeta__cuerpo:hover {
+  right: 0;
+}
 .geo__tarjeta__cuerpo__titulo {
+  text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 500;
 }
-
 .geo__tarjeta__cuerpo__subtitulo {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 300;
 }
-
 .geo__tarjeta__cuerpo__info {
   font-size: 12px;
 }
-
 .geo__tarjeta__cuerpo__btn {
   color: #1f3d47;
   background: rgba(143, 171, 186, 0.4392156863);
@@ -332,6 +299,15 @@ h2 {
   cursor: pointer;
 }
 
+.botiquin {
+  padding: 20px 20px 0 0;
+}
+.botiquin__texto {
+  font-size: 20px;
+  color: beige;
+  padding: 20px;
+}
+
 .articulo-gemas {
   display: flex;
   margin: 0 auto;
@@ -340,7 +316,6 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
 }
-
 .articulo-gemas__cuerpo {
   background-color: #494852;
   border-radius: 5%;
@@ -348,7 +323,6 @@ h2 {
   padding: 20px;
   gap: 20px;
 }
-
 .articulo-gemas__video {
   display: flex;
   flex-direction: column;
@@ -357,32 +331,6 @@ h2 {
   gap: 2.5em;
 }
 
-/*media query*/
-@media only screen and (max-width: 1000px) {
-  .articulo-gemas {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .articulo-gemas__cuerpo {
-    border-radius: 0;
-  }
-  .articulo-gemas__video {
-    display: flex;
-    width: 70%;
-    padding: 20px 0 0 40px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .articulo-gemas__cuerpo {
-    font-size: 12px;
-  }
-  .articulo-gemas__video {
-    width: 90%;
-    justify-content: center;
-    padding: 20px 0 0 0;
-  }
-}
 /*BIOGRAFIA */
 .biografia__imagenes {
   display: flex;
@@ -408,7 +356,6 @@ h2 {
   color: #b1c3c8;
   padding: 1.1em;
 }
-
 .biografia__cuerpo__texto {
   color: #b1c3c8;
   width: 100%;
@@ -429,12 +376,7 @@ h2 {
 /* Contacto----------------------------------------------------------- */
 .contacto {
   display: flex;
-  width: 100%;
-  height: 100vh;
   background-image: url(../images/mapa.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .formulario {
@@ -568,6 +510,9 @@ h2 {
   .articulo img {
     padding: 0px;
   }
+  .articulo p {
+    font-size: 10px;
+  }
   .separador {
     padding: px;
   }
@@ -581,11 +526,34 @@ h2 {
     height: 150px;
     padding: 0 0 30px 0;
   }
-  .articulo p {
-    font-size: 10px;
-  }
 }
 /* -----  ----FINAL ASTROLOGIA QUERYS--------------------------------*/
+/*media query GEMOTERAPIA*/
+@media only screen and (max-width: 1000px) {
+  .articulo-gemas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .articulo-gemas__cuerpo {
+    border-radius: 0;
+  }
+  .articulo-gemas__video {
+    display: flex;
+    width: 70%;
+    padding: 20px 0 0 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .articulo-gemas__cuerpo {
+    font-size: 12px;
+  }
+  .articulo-gemas__video {
+    width: 90%;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+}
 /* --------------MEDIA QUERY  INDEX------------------------------------------*/
 @media only screen and (max-width: 900px) {
   .card-group {
@@ -695,6 +663,9 @@ h2 {
   .articulo img {
     padding: 0px;
   }
+  .articulo p {
+    font-size: 10px;
+  }
   .separador {
     padding: px;
   }
@@ -708,10 +679,33 @@ h2 {
     height: 150px;
     padding: 0 0 30px 0;
   }
-  .articulo p {
-    font-size: 10px;
-  }
 }
 /* -----  ----FINAL ASTROLOGIA QUERYS--------------------------------*/
+/*media query GEMOTERAPIA*/
+@media only screen and (max-width: 1000px) {
+  .articulo-gemas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .articulo-gemas__cuerpo {
+    border-radius: 0;
+  }
+  .articulo-gemas__video {
+    display: flex;
+    width: 70%;
+    padding: 20px 0 0 40px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .articulo-gemas__cuerpo {
+    font-size: 12px;
+  }
+  .articulo-gemas__video {
+    width: 90%;
+    justify-content: center;
+    padding: 20px 0 0 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

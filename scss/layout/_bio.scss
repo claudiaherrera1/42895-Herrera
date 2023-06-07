@@ -17,8 +17,9 @@
     top: 25%;
     right: 8%;
     }
+}
 
-    &__cuerpo {
+.biografia__cuerpo {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -32,7 +33,6 @@
             padding: 1.1em;
         }
     }
-}
 
 @media only screen and (max-width:600px) {
     .biografia__imagenes img {
