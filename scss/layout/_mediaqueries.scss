@@ -15,20 +15,16 @@
 }
 
 @media only screen and (max-width:655px) {
-    .bienvenida {
+    .bienvenida__index {
         display: flex;
         flex-direction: column;
         height: auto;
         justify-content: center;
 
-        &__texto {
-            width: 100%;
-            text-align: center;
-        }
-
-        &__title {
-            width: 100%;
-            text-align: center;
+    .bienvenida__index__texto {
+        position: absolute;
+        width: 100%;
+        text-align: center;
         }
     }
 

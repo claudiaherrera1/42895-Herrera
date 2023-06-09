@@ -1,10 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Gotu&family=Manrope:wght@300&family=Playfair+Display:ital,wght@1,700&family=Prata&family=Raleway:wght@300&display=swap");
-/*font-family: 'Aboreto', cursive;
-font-family: 'Gotu', sans-serif;
-font-family: 'Manrope', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway:wght@300&display=swap");
+/*
 font-family: 'Playfair Display', serif;
-font-family: 'Prata', serif;
 font-family: 'Raleway', sans-serif;
 */
 * {
@@ -17,7 +14,22 @@ body {
   background-color: #33313b;
 }
 
-.d-bienv, .contacto, .bienvenida__gemo, .bienvenida__astro, .bienvenida__index {
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  color: beige;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  color: beige;
+}
+
+.d-bienv, .contacto, .bienvenida__gemo, .bienvenida__astro {
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -26,10 +38,15 @@ body {
   background-attachment: fixed;
 }
 
-.d-flex, .bienvenida__gemo, .bienvenida__astro, .bienvenida__index {
+.d-flex, .bienvenida__gemo, .bienvenida__astro {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container img {
+  width: 100%;
+  height: 100%;
 }
 
 .pie {
@@ -37,7 +54,7 @@ body {
   justify-content: center;
   align-items: end;
   height: 450px;
-  background-image: url("/images/fondoindex3.jpg");
+  background-image: url("/images/footer.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -45,6 +62,8 @@ body {
 }
 .pie__redes img {
   padding: 25px;
+  width: 30%;
+  height: 30%;
 }
 
 .copy {
@@ -55,24 +74,33 @@ body {
 }
 
 .bienvenida__index {
-  background-image: url("/images/fondo12.jpg");
+  background-image: url("/images/astrologiafondo.jpg");
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.bienvenida__index__img {
+  width: 30%;
+  flex: 1;
+  padding: 50px;
+  min-width: 250px;
+  object-fit: cover;
+}
+.bienvenida__index__img img {
+  width: 100%;
+  height: 100%;
 }
 .bienvenida__index__texto {
-  padding: 18px;
-  width: 500px;
-  text-align: center;
-  color: beige;
-  font-size: 20px;
+  flex: 2;
+  padding: 55px;
 }
-
-h1 {
-  font-family: "Playfair Display", serif;
-  color: beige;
+.bienvenida__index__texto h1 {
+  font-size: 2.5rem;
+  padding: 25px;
 }
-
-h2 {
-  font-size: 32px;
-  font-weight: 300;
+.bienvenida__index__texto p {
+  font-size: 1.5rem;
   color: beige;
 }
 
@@ -127,7 +155,10 @@ h2 {
   background-color: rgba(90, 13, 13, 0.5450980392);
 }
 .card img {
+  width: 100%;
+  height: 100%;
   border-radius: 100%;
+  aspect-ratio: 1/1;
   padding: 15px;
 }
 .card img:hover {
@@ -147,7 +178,7 @@ h2 {
 
 /*.....ASTROLOGÍA.......*/
 .bienvenida__astro {
-  background-image: url("../images/fondoindex6.jpg");
+  background-image: url("../images/astrofondo.jpg");
 }
 .bienvenida__astro__frase {
   color: rgba(29, 29, 29, 0.662745098);
@@ -415,17 +446,14 @@ h2 {
   }
 }
 @media only screen and (max-width: 655px) {
-  .bienvenida {
+  .bienvenida__index {
     display: flex;
     flex-direction: column;
     height: auto;
     justify-content: center;
   }
-  .bienvenida__texto {
-    width: 100%;
-    text-align: center;
-  }
-  .bienvenida__title {
+  .bienvenida__index .bienvenida__index__texto {
+    position: absolute;
     width: 100%;
     text-align: center;
   }
@@ -568,17 +596,14 @@ h2 {
   }
 }
 @media only screen and (max-width: 655px) {
-  .bienvenida {
+  .bienvenida__index {
     display: flex;
     flex-direction: column;
     height: auto;
     justify-content: center;
   }
-  .bienvenida__texto {
-    width: 100%;
-    text-align: center;
-  }
-  .bienvenida__title {
+  .bienvenida__index .bienvenida__index__texto {
+    position: absolute;
     width: 100%;
     text-align: center;
   }

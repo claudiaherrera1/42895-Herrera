@@ -3,15 +3,18 @@
     justify-content: center;
     align-items: end;
     height: 450px;
-    background-image: url("/images/fondoindex3.jpg");
+    background-image: url("/images/footer.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     padding: 50px;
     &__redes img {
     padding: 25px;
+    width: 30%;
+    height: 30%;
     }
 }
+// simulación ia de la Nebulosa Cabeza de Caballo en Widefield
 
 .copy {
     height: 50px;

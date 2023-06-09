@@ -1,28 +1,43 @@
+
 .bienvenida__index {
-    background-image: url("/images/fondo12.jpg");
+    background-image: url("/images/astrologiafondo.jpg");
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    &__img {
+        width: 30%;
+    flex: 1;
+    padding: 50px;
+    min-width: 250px;
+    object-fit: cover;
+    
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    &__texto{
+        
+        flex: 2;
+        padding: 55px;
+        
+        
+        
+        h1 {
+            font-size: 2.5rem;
+            padding:  25px;
+        }   
 
-    @extend .d-flex;
-    @extend .d-bienv;
-
-    &__texto {
-        padding: 18px;
-        width: 500px;
-        text-align: center;
-        color: beige;
-        font-size: 20px;
+        p {
+            font-size: 1.5rem;
+            color: beige;
+        }
     }
 }
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    color: beige;
-}
-
-h2 {
-    font-size: 32px;
-    font-weight: 300;
-    color: beige;
-}
 
 .separador {
     display: flex;
@@ -75,7 +90,10 @@ h2 {
     background-color: #5a0d0d8b;
     
     img {
+    width: 100%;
+    height: 100%;    
     border-radius: 100%;
+    aspect-ratio: 1 / 1;
     padding: 15px;
     }
     
@@ -93,5 +111,5 @@ h2 {
 
 .card-text {
     text-align: center;
-    color: #fff
+    color: #fff;
 }
