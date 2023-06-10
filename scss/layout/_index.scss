@@ -1,6 +1,6 @@
 
 .bienvenida__index {
-    background-image: url("../images/astrologiafondo.jpg");
+    background-image: url("images/astrologiafondo.jpg");
     width: 100%;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@
 .cards {
     display: flex;
     height: 800px;
-    background-image: url("../images/fondoindex9.jpg");
+    background-image: url("images/fondoindex9.jpg");
     @include bg;
     justify-content: center;
     align-items: center;
@@ -111,4 +111,6 @@
 .card-text {
     text-align: center;
     color: #fff;
+    
+
 }
