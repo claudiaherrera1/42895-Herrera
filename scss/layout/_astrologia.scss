@@ -24,7 +24,7 @@
 .articulo {
     display: flex;
     height: 800px;
-    background-image: url("/images/fondoindex8.jpg");
+    background-image: url("../images/fondoindex8.jpg");
     @include bg;
     justify-content: center;
     align-items: center;

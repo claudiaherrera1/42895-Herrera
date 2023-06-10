@@ -61,7 +61,7 @@ p {
   justify-content: center;
   align-items: end;
   height: 450px;
-  background-image: url("/images/footer.jpg");
+  background-image: url("../images/footer.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -81,7 +81,7 @@ p {
 }
 
 .bienvenida__index {
-  background-image: url("/images/astrologiafondo.jpg");
+  background-image: url("../images/astrologiafondo.jpg");
   width: 100%;
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@ p {
 .cards {
   display: flex;
   height: 800px;
-  background-image: url("/images/fondoindex9.jpg");
+  background-image: url("../images/fondoindex9.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -209,7 +209,7 @@ p {
 .articulo {
   display: flex;
   height: 800px;
-  background-image: url("/images/fondoindex8.jpg");
+  background-image: url("../images/fondoindex8.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
