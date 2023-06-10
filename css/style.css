@@ -93,6 +93,11 @@ p {
   padding: 50px;
   min-width: 250px;
   object-fit: cover;
+  animation-name: animacion;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  transform: translateX(0);
 }
 .bienvenida__index__img img {
   width: 100%;
@@ -101,6 +106,11 @@ p {
 .bienvenida__index__texto {
   flex: 2;
   padding: 55px;
+  animation-name: texto;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  transform: translateX(0);
 }
 .bienvenida__index__texto h1 {
   font-size: 2.5rem;
@@ -111,6 +121,26 @@ p {
   color: beige;
 }
 
+@keyframes animacion {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes texto {
+  0% {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 .separador {
   display: flex;
   flex-direction: column;
@@ -121,7 +151,7 @@ p {
   padding: 40px;
 }
 .separador:hover {
-  background-color: #102233;
+  background-color: rgb(5, 55, 64);
   color: #dbe1e1;
 }
 .separador__texto {
@@ -163,8 +193,6 @@ p {
   justify-content: center;
 }
 .card img {
-  width: 100%;
-  height: auto;
   border-radius: 100%;
   padding: 15px;
 }
@@ -245,7 +273,7 @@ p {
 
 /*  - GEMOTERAPIA ----------------------------------------------------*/
 .bienvenida__gemo {
-  background-image: url("../images/gemas/caratula3.jpg");
+  background-image: url("../images/caratula3.jpg");
 }
 .bienvenida__gemo__title {
   width: 300px;
