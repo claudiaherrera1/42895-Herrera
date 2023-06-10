@@ -22,15 +22,15 @@
 .biografia__cuerpo {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         color: #b1c3c8;
-        padding: 1.1em;
+        padding: 2.1em;
 
         &__texto {
             color: #b1c3c8;
             width: 100%;
             font-size: 15px;
-            padding: 1.1em;
+            padding: 2.1em;
         }
     }
 
