@@ -16,6 +16,7 @@ body {
 
 html {
   font-size: 10px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -56,19 +57,31 @@ p {
   height: 100%;
 }
 
+.offcanvas {
+  background-color: #33313b;
+}
+
+.offcanvas-title {
+  color: beige;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
 .pie {
   display: flex;
   justify-content: center;
   align-items: end;
-  height: 450px;
+  height: 200px;
   background-image: url("../images/footer.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   padding: 50px;
+  gap: 15px;
 }
 .pie__redes img {
-  padding: 25px;
+  padding: 20px;
   width: 30%;
   height: 30%;
 }
@@ -78,6 +91,7 @@ p {
   background-color: #2a2626;
   text-align: center;
   color: beige;
+  padding: 15px 0 0 0;
 }
 
 .bienvenida__index {
@@ -86,6 +100,9 @@ p {
   display: flex;
   align-items: center;
   text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .bienvenida__index__img {
   width: 30%;
@@ -149,6 +166,7 @@ p {
   background: #33313b;
   text-align: center;
   padding: 40px;
+  transition: all 0.35s ease;
 }
 .separador:hover {
   background-color: rgb(5, 55, 64);
@@ -158,6 +176,46 @@ p {
   font-size: 20px;
   color: beige;
   padding: 20px;
+}
+
+.block {
+  text-align: center;
+  position: relative;
+  margin: 40px;
+  padding: 15px;
+  width: 95%;
+  height: 150px;
+  background: linear-gradient(0deg, black, rgb(37, 36, 36));
+}
+
+.glow::before, .glow::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, rgba(5, 70, 31, 0.7176470588), #0d375f);
+  background-size: 200%;
+  width: calc(100% + 5px);
+  height: calc(90% + 20px);
+  z-index: -1;
+  animation: animate 10s linear;
+  animation-delay: 3s;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.glow::after {
+  filter: blur(20px);
+  opacity: 0.98;
 }
 
 .cards {
@@ -195,9 +253,10 @@ p {
 .card img {
   border-radius: 100%;
   padding: 15px;
+  transition: all 0.35s ease;
 }
 .card img:hover {
-  border: 10px solid rgba(98, 8, 8, 0.3803921569);
+  scale: 1.1;
   filter: hue-rotate(180deg);
 }
 
@@ -264,11 +323,37 @@ p {
 .articulos__esferas img {
   width: 100px;
   margin: 5px -15px;
+  transition: all 0.35s ease;
 }
 .articulos__esferas img:hover {
-  transform: transltaleY(-30px);
+  transform: translateY(30px);
   scale: 1.4;
-  transition: all 0.35s ease;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #33313b;
+}
+
+.modal-body p {
+  color: beige;
+}
+
+.modal-header H1 {
+  color: black;
+  font-size: 30px;
+}
+
+.row {
+  text-align: left;
+  padding: 20px 30px 0 20px;
+}
+
+.col-md-6 img {
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
 }
 
 /*  - GEMOTERAPIA ----------------------------------------------------*/
@@ -391,7 +476,7 @@ p {
 .biografia__imagenes {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 280px;
   background-image: url("../images/cartafondo.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -401,7 +486,7 @@ p {
   width: 280px;
   border-radius: 100%;
   position: absolute;
-  top: 25%;
+  top: 20%;
   right: 8%;
 }
 
@@ -412,6 +497,9 @@ p {
   color: #b1c3c8;
   padding: 2.1em;
 }
+.biografia__cuerpo h2 {
+  margin: 0 0 0 30px;
+}
 .biografia__cuerpo__texto {
   color: #b1c3c8;
   width: 100%;
@@ -419,20 +507,10 @@ p {
   padding: 2.1em;
 }
 
-@media only screen and (max-width: 600px) {
-  .biografia__imagenes img {
-    width: 50%;
-    border-radius: 100%;
-    position: absolute;
-    top: 25%;
-    right: 25%;
-    font-size: 10px;
-  }
-}
 /* Contacto----------------------------------------------------------- */
 .contacto {
   display: flex;
-  background-image: url(../images/mapa.jpg);
+  background-image: url("../images/mapa.jpg");
 }
 
 .formulario {
@@ -450,6 +528,20 @@ p {
   height: 60vh;
   justify-content: left;
   padding: 30px;
+}
+
+.form-label {
+  font-size: 30px;
+}
+
+.btn {
+  font-size: 15px;
+}
+
+.lugar {
+  color: #33313b;
+  font-weight: 500;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -607,6 +699,31 @@ p {
     padding: 20px 0 0 0;
   }
 }
+@media only screen and (max-width: 450px) {
+  .pie {
+    height: 130px;
+    justify-content: space-evenly;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 372px) {
+  .biografia__imagenes {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .biografia__imagenes img {
+    width: 50%;
+    border-radius: 100%;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    font-size: 10px;
+  }
+  .biografia__imagenes {
+    height: 250px;
+  }
+}
 .art {
   width: 100%;
   height: auto;
@@ -624,6 +741,14 @@ p {
 }
 .art__novedad {
   padding: 25px;
+}
+
+.cartel {
+  width: 100%;
+  height: auto;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

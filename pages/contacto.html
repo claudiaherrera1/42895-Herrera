@@ -18,7 +18,7 @@
 
     <!--Navegador ------------------------------------------------------------------------->
     <header class="navegador">
-        <nav class="navbar navbar-light navbar-expand-md" style="background-color: rgb(251, 255, 255);">
+        <nav class="navbar navbar-dark navbar-expand-md">
             <div class="container">
                 <a class="navbar-brand" href="../index.html">
                     <img src="../images/logo.png" alt="logo" class="img-fluid" role="button" tabindex="0">
@@ -27,10 +27,10 @@
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end" style="background-color: rgb(251, 255, 255);" tabindex="-1" id="offcanvasNavbar"
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Claudia Herrera</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Espacio de Astrología</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -61,16 +61,21 @@
         
         <div class="formulario">
             <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="nombre" class="form-control" id="exampleFormControlInput1"
+                 placeholder="escribe tu nombre">
+            </div>
+            <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1"
                  placeholder="name@example.com">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
             </div>
                 <button type="button" class="btn btn-secondary">Enviar</button>
-                <h2>Buenos Aires - Argentina</h2>
+                <h2 class="lugar">Buenos Aires - Argentina</h2>
         </div>
     </section>
 
@@ -94,48 +99,9 @@
             </div>
         </div>
 
-        <nav class="navbar navbar-dark navbar-expand-md" style="background-color:#33313b;">
-            <div class="container">
-                <a class="navbar-brand" href="../index.html">
-                    <img src="../images/logo.png" alt="logo" class="img-fluid" role="button" tabindex="0">
-                    </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" style="background-color:#33313b;" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Claudia Herrera</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" aria-current="page" href="../index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="bio.html">BÍO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="astrologia.html">ASTROLOGÍA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="gemoterapia.html">GEMOTERAPIA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-3" href="contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        
-            <div class="copy">
-                <p>Copyright CLAUDIA HERRERA © 2023</p>
-            </div>
+        <div class="copy">
+            <p>Copyright CLAUDIA HERRERA © 2023</p>
+        </div>
         
     </footer>
 

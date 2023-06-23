@@ -175,3 +175,32 @@
             padding: 20px 0 0 0 ;
         }
     }
+
+    @media only screen and (max-width:450px) {
+        .pie {
+            height: 130px;
+            justify-content: space-evenly;
+            margin: 10px;
+        }
+    }
+
+    @media only screen and (max-width:372px){
+        .biografia__imagenes {
+            height: 180px;
+        }
+    }
+
+    @media only screen and (max-width:600px) {
+        .biografia__imagenes img {
+            width: 50%;
+            border-radius: 100%;
+            position: absolute;
+            top: 20%;
+            right: 25%;
+            font-size: 10px;
+        }
+        .biografia__imagenes {
+            height: 250px;
+        }
+    }
+    

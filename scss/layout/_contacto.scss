@@ -2,7 +2,7 @@
 
 .contacto {
     display: flex;
-    background-image: url(../images/mapa.jpg);
+    background-image: url("../images/mapa.jpg");
     @extend .d-bienv;
 }
 
@@ -21,6 +21,21 @@
     height: 60vh;
     justify-content: left;
     padding: 30px ;
+}
+
+
+.form-label {
+   font-size: 30px;
+}
+
+.btn {
+    font-size: 15px;
+}
+
+.lugar {
+    color: #33313b;
+    font-weight: 500;
+    font-size: 40px;
 }
 @media only screen and (max-width:600px) {
     .formulario {

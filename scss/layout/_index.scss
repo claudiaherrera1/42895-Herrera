@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     
     
     &__img {
@@ -68,8 +71,6 @@
     }
 }
 
-
-
 .separador {
     display: flex;
     flex-direction: column;
@@ -78,6 +79,7 @@
     background: $main-color;
     text-align: center;
     padding: 40px;
+    transition: all 0.35s ease;
 
     &:hover {
     background-color: rgb(5, 55, 64);
@@ -90,6 +92,48 @@
         padding: 20px;
     }
 }
+
+.block {
+    text-align: center;
+    position: relative;
+    margin: 40px;
+    padding: 15px;
+    width: 95%;
+    height: 150px;
+    background: linear-gradient(0deg , black , rgb(37, 36, 36));
+}
+
+.glow::before , .glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg ,#05461fb7,#0d375f);
+    background-size: 200%;
+    width: calc(100% + 5px);
+    height: calc(90% + 20px);
+    z-index: -1;
+    animation: animate 10s linear;
+    animation-delay: 3s;
+    
+}
+
+@keyframes animate{
+    0% {
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+ .glow::after{
+    filter: blur(20px) ;
+    opacity: 0.98;
+ }
+
 
 .cards {
     display: flex;
@@ -123,12 +167,13 @@
     img {
     border-radius: 100%;
     padding: 15px;
+    transition: all 0.35s ease;
     }
     
     img:hover {
-        border: 10px solid #62080861;
+        scale: 1.1;
         filter: hue-rotate(180deg);
-    }
+        }
     
 }
 
@@ -140,6 +185,4 @@
 .card-text {
     text-align: center;
     color: #fff;
-    
-
 }
