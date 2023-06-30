@@ -10,14 +10,16 @@
 }
 
 
-.separador {
+.separadora {
     @include separ;
     padding: 40px;
 
     p {
-        font-size: 15px;
+        font-size: 2rem;
         color: beige;
         padding: 40px;
+        
+        
     }
 }
 
@@ -35,12 +37,20 @@
 
     &__cuerpo {
         padding: 30px;
+        &__title {
+            font-size: 2.5rem;
+        }
+        &__texto {
+            color: black;
+            font-size: 1.5rem;
+        }
     }
 }
 
 .articulos {
     @include separ;
     padding: 1.5em;
+    
 
     &__esferas img {
         width: 100px;
@@ -54,18 +64,15 @@
     }
 }
 
-.modal-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #33313b;
-    
+.articulos p {
+    font-size: 2rem;
 }
 .modal-body p {
     color: beige;
     
 }
 .modal-header H1 {
-    color: black;
+    
     font-size: 30px;
     
 }
@@ -73,6 +80,7 @@
     text-align: left;
     padding: 20px 30px 0 20px;
 }
+
 .col-md-6 img {
     width: 40%;
     height: auto;

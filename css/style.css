@@ -21,7 +21,6 @@ html {
 
 h1 {
   font-family: "Playfair Display", serif;
-  font-size: 3rem;
   color: beige;
 }
 
@@ -37,7 +36,7 @@ p {
   color: beige;
 }
 
-.d-bienv, .contacto, .bienvenida__gemo, .bienvenida__astro {
+.d-bienv, .contact, .bienvenida__gemo, .bienvenida__astro {
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -178,46 +177,6 @@ p {
   padding: 20px;
 }
 
-.block {
-  text-align: center;
-  position: relative;
-  margin: 40px;
-  padding: 15px;
-  width: 95%;
-  height: 150px;
-  background: linear-gradient(0deg, black, rgb(37, 36, 36));
-}
-
-.glow::before, .glow::after {
-  content: "";
-  position: absolute;
-  left: -2px;
-  top: -2px;
-  background: linear-gradient(45deg, rgba(5, 70, 31, 0.7176470588), #0d375f);
-  background-size: 200%;
-  width: calc(100% + 5px);
-  height: calc(90% + 20px);
-  z-index: -1;
-  animation: animate 10s linear;
-  animation-delay: 3s;
-}
-
-@keyframes animate {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-.glow::after {
-  filter: blur(20px);
-  opacity: 0.98;
-}
-
 .cards {
   display: flex;
   height: 800px;
@@ -278,7 +237,7 @@ p {
   color: rgba(29, 29, 29, 0.662745098);
 }
 
-.separador {
+.separadora {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -287,8 +246,8 @@ p {
   text-align: center;
   padding: 40px;
 }
-.separador p {
-  font-size: 15px;
+.separadora p {
+  font-size: 2rem;
   color: beige;
   padding: 40px;
 }
@@ -310,6 +269,13 @@ p {
 .articulo__cuerpo {
   padding: 30px;
 }
+.articulo__cuerpo__title {
+  font-size: 2.5rem;
+}
+.articulo__cuerpo__texto {
+  color: black;
+  font-size: 1.5rem;
+}
 
 .articulos {
   display: flex;
@@ -330,10 +296,8 @@ p {
   scale: 1.4;
 }
 
-.modal-body {
-  display: flex;
-  flex-direction: column;
-  background-color: #33313b;
+.articulos p {
+  font-size: 2rem;
 }
 
 .modal-body p {
@@ -341,7 +305,6 @@ p {
 }
 
 .modal-header H1 {
-  color: black;
   font-size: 30px;
 }
 
@@ -476,7 +439,7 @@ p {
 .biografia__imagenes {
   display: flex;
   width: 100%;
-  height: 280px;
+  height: 304px;
   background-image: url("../images/cartafondo.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -495,7 +458,8 @@ p {
   flex-direction: column;
   text-align: left;
   color: #b1c3c8;
-  padding: 2.1em;
+  margin-top: 60px;
+  padding: 4.1em;
 }
 .biografia__cuerpo h2 {
   margin: 0 0 0 30px;
@@ -508,45 +472,187 @@ p {
 }
 
 /* Contacto----------------------------------------------------------- */
-.contacto {
-  display: flex;
+.contact {
   background-image: url("../images/mapa.jpg");
-}
-
-.formulario {
-  width: 50%;
-  padding: 40px;
-}
-
-.nav-contact link {
-  color: #000;
-}
-
-.form {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-box {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  width: 30%;
+  height: auto;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.contact-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-box .user-box {
+  position: relative;
+}
+
+.contact-box .user-box input {
   width: 100%;
-  height: 60vh;
-  justify-content: left;
-  padding: 30px;
+  padding: 10px 0;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
 }
 
-.form-label {
-  font-size: 30px;
+.contact-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 19px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.btn {
-  font-size: 15px;
+.contact-box .user-box input:focus ~ label,
+.contact-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 1.5rem;
 }
 
-.lugar {
-  color: #33313b;
-  font-weight: 500;
-  font-size: 40px;
+.contact-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 600px) {
-  .formulario {
-    width: 70%;
+.contact-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+}
+
+.contact-box a span {
+  position: absolute;
+  display: block;
+}
+
+.contact-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.contact-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.contact-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+.contact-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contact-box {
+    top: 60%;
+    height: 80%;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .contact-box {
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    padding: 20px;
+  }
+  .user-box {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 85%;
   }
 }
 /* --------------MEDIA QUERY  INDEX------------------------------------------*/
@@ -566,6 +672,7 @@ p {
   .bienvenida__index {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: auto;
     justify-content: center;
   }
@@ -573,6 +680,13 @@ p {
     position: absolute;
     width: 100%;
     text-align: center;
+    padding: 0px;
+  }
+  .bienvenida__index .bienvenida__index__texto h1 {
+    padding: 20px 0 0 0;
+  }
+  .bienvenida__index .separador__texto p {
+    padding: 5px !important;
   }
   .cards h2 {
     font-size: 20px;
@@ -600,7 +714,6 @@ p {
   }
   .bienvenida__texto {
     padding: 15px;
-    width: auto;
     font-size: 15px;
   }
   h2 {
@@ -611,7 +724,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: auto;
     background: rgb(42, 38, 38);
     text-align: center;
     padding: 20px;
@@ -621,8 +734,12 @@ p {
   }
 }
 @media only screen and (max-width: 356px) {
+  .bienvenida__index {
+    height: auto;
+  }
   .bienvenida img {
     width: 80%;
+    height: auto;
   }
   .card-group {
     width: 100%;
@@ -644,9 +761,40 @@ p {
     padding: 10px;
   }
 }
-/* ---------FINAL MEDIA QUERY  INDEX-----------------------------------------*/
+/* ---------FINAL MEDIA QUERY  INDEX-------------------------------*/
+/* ---------MEDIA QUERY BIO----------------------------------------*/
+@media only screen and (max-width: 400px) {
+  .biografia__cuerpo {
+    margin: 0px;
+  }
+  .biografia__cuerpo__texto p {
+    margin-top: 0;
+    height: auto;
+    padding: 5px;
+  }
+  .biografia__cuerpo .biografia__cuerpo h2 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .biografia__cuerpo {
+    padding: 6%;
+  }
+  .biografia__cuerpo__texto {
+    padding: 0;
+  }
+  .biografia__imagenes img {
+    width: 180px;
+    height: auto;
+    top: 20%;
+    right: 25%;
+  }
+}
 /* ---------------ASTROLOGIA QUERYS--------------------------------*/
-@media only screen and (max-width: 934px) {
+@media only screen and (max-width: 1000px) {
+  .bienvenida__frase {
+    padding: 15%;
+  }
   .articulo {
     display: grid;
     height: auto;
@@ -655,11 +803,11 @@ p {
   .articulo img {
     padding: 0px;
   }
-  .articulo p {
-    font-size: 10px;
+  .separadora {
+    padding: 0px;
   }
-  .separador {
-    padding: px;
+  .separadora p {
+    font-size: 1.5rem;
   }
   .articulos {
     justify-content: center;
@@ -672,8 +820,30 @@ p {
     padding: 0 0 30px 0;
   }
 }
+@media only screen and (max-width: 600px) {
+  .bienvenida__astro {
+    height: auto;
+  }
+  .bienvenida__frase {
+    font-size: 2.5rem;
+  }
+  .articulo__cuerpo {
+    padding: 5%;
+  }
+  .articulo__cuerpo__texto p {
+    font-size: 2rem;
+    text-align_: justify;
+  }
+  .separadora p {
+    padding: 5%;
+  }
+  .articulos {
+    margin: 0;
+    padding: 0;
+  }
+}
 /* -----  ----FINAL ASTROLOGIA QUERYS--------------------------------*/
-/*media query GEMOTERAPIA*/
+/*media query GEMOTERAPIA -------------------*/
 @media only screen and (max-width: 1000px) {
   .articulo-gemas {
     display: flex;
@@ -689,6 +859,12 @@ p {
     padding: 20px 0 0 40px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .bienvenida__gemo__title {
+    padding: 0%;
+    margin: 0%;
+  }
+}
 @media only screen and (max-width: 450px) {
   .articulo-gemas__cuerpo {
     font-size: 12px;
@@ -699,29 +875,25 @@ p {
     padding: 20px 0 0 0;
   }
 }
+@media only screen and (max-width: 335px) {
+  .bienvenida__gemo__title {
+    width: auto;
+    text-shadow: #Fff 1px 0 15px;
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    padding: 2%;
+  }
+  .gem {
+    font-size: 2rem;
+    padding: 5%;
+  }
+}
 @media only screen and (max-width: 450px) {
   .pie {
     height: 130px;
     justify-content: space-evenly;
     margin: 10px;
-  }
-}
-@media only screen and (max-width: 372px) {
-  .biografia__imagenes {
-    height: 180px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .biografia__imagenes img {
-    width: 50%;
-    border-radius: 100%;
-    position: absolute;
-    top: 20%;
-    right: 25%;
-    font-size: 10px;
-  }
-  .biografia__imagenes {
-    height: 250px;
   }
 }
 .art {
