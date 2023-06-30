@@ -1,6 +1,6 @@
 /* Contacto----------------------------------------------------------- */
 .contact {
-    background-image: url("../images/mapa.jpg");
+    background-image: url("../images/mapa.jpg")!important;
     @extend .d-bienv;
     display: flex;
     flex-wrap: wrap;
