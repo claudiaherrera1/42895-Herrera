@@ -36,7 +36,7 @@ p {
   color: beige;
 }
 
-.d-bienv, .contact, .bienvenida__gemo, .bienvenida__astro {
+.d-bienv, .contactos, .bienvenida__gemo, .bienvenida__astro {
   width: 100%;
   height: 100vh;
   background-position: center;
@@ -472,8 +472,14 @@ p {
 }
 
 /* Contacto----------------------------------------------------------- */
-.contact {
-  background-image: url("../images/mapa.jpg") !important;
+.cont {
+  background-image: url("../images/mapa.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactos {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -574,7 +580,7 @@ p {
   0% {
     left: -100%;
   }
-  50%, 100% {
+  100% {
     left: 100%;
   }
 }
@@ -592,7 +598,7 @@ p {
   0% {
     top: -100%;
   }
-  50%, 100% {
+  100% {
     top: 100%;
   }
 }
@@ -610,7 +616,7 @@ p {
   0% {
     right: -100%;
   }
-  50%, 100% {
+  100% {
     right: 100%;
   }
 }
@@ -628,31 +634,8 @@ p {
   0% {
     bottom: -100%;
   }
-  50%, 100% {
+  100% {
     bottom: 100%;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .contact-box {
-    top: 60%;
-    height: 80%;
-    padding: 20px;
-  }
-}
-@media only screen and (max-width: 770px) {
-  .contact-box {
-    width: 80%;
-    height: 80%;
-    left: 50%;
-    padding: 20px;
-  }
-  .user-box {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 400px) {
-  .contact-box {
-    width: 85%;
   }
 }
 /* --------------MEDIA QUERY  INDEX------------------------------------------*/
@@ -889,11 +872,36 @@ p {
     padding: 5%;
   }
 }
+/*media query FOOTER -------------------*/
 @media only screen and (max-width: 450px) {
   .pie {
     height: 130px;
     justify-content: space-evenly;
     margin: 10px;
+  }
+}
+/*media query CONTACTO -------------------*/
+@media only screen and (max-width: 1000px) {
+  .contact-box {
+    top: 60%;
+    height: 80%;
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .contact-box {
+    width: 80%;
+    height: 80%;
+    left: 50%;
+    padding: 20px;
+  }
+  .user-box {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .contact-box {
+    width: 85%;
   }
 }
 .art {
@@ -918,7 +926,6 @@ p {
 .cartel {
   width: 100%;
   height: auto;
-  border: 2px solid red;
   display: flex;
   justify-content: center;
 }

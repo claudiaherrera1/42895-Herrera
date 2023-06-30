@@ -1,6 +1,13 @@
 /* Contacto----------------------------------------------------------- */
-.contact {
-    background-image: url("../images/mapa.jpg")!important;
+
+.cont {
+    background-image: url("../images/mapa.jpg");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contactos {
     @extend .d-bienv;
     display: flex;
     flex-wrap: wrap;
@@ -106,7 +113,6 @@
         left: -100%;
     }
 
-    50%,
     100% {
         left: 100%;
     }
@@ -127,7 +133,6 @@
         top: -100%;
     }
 
-    50%,
     100% {
         top: 100%;
     }
@@ -148,7 +153,6 @@
         right: -100%;
     }
 
-    50%,
     100% {
         right: 100%;
     }
@@ -169,37 +173,8 @@
         bottom: -100%;
     }
 
-    50%,
+
     100% {
         bottom: 100%;
-    }
-}
-@media only screen and (max-width:1000px) {
-    .contact-box {
-    top: 60%;
-    height: 80%;
-    padding: 20px;
-    
-   
-    }
-}
-
-@media only screen and (max-width:770px) {
-    .contact-box {
-        width: 80%;
-        height: 80%;
-        left: 50%;
-        padding: 20px;
-        }
-    .user-box {
-        width: 80%;
-    }
-    }
-
-
-@media only screen and (max-width:400px) {
-    .contact-box {
-        width: 85%;
-        
     }
 }
