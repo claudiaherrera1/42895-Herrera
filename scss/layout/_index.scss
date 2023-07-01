@@ -36,16 +36,16 @@
         transform: translateX(0);
 
         h1 {
-            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
             padding: 25px;
         }
 
         p {
-            font-size: 1.5rem;
+            font-size: 2rem;
             color: beige;
         }
     }
-
 }
 
 @keyframes animacion {

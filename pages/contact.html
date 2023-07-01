@@ -10,15 +10,16 @@
     <link rel="stylesheet" href="../css/style.css">
     <meta name="author" content="Claudia Herrera">
     <meta name="audience" content="all">
-    <meta name="description" content="Articulos varios sobre astrología">
-    <title>Artículos</title>
+    <meta name="description"
+        content="Comunicate conmigo.">
+    <title>Contact</title>
 </head>
 
 <body>
     <header class="navegador">
         <nav class="navbar navbar-dark navbar-expand-md">
             <div class="container">
-                <a class="navbar-brand" href="../index.html" aria-label="link al index">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../images/logo.png" alt="logo" class="img-fluid" role="button" tabindex="0">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -34,23 +35,19 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link fs-3" aria-current="page" href="../index.html"
-                                    aria-label="link al index">INICIO</a>
+                                <a class="nav-link fs-3" aria-current="page" href="../index.html">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="bio.html" aria-label="link a la biografía">BÍO</a>
+                                <a class="nav-link fs-3" href="bio.html">BÍO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="astrologia.html"
-                                    aria-label="link a astrología">ASTROLOGÍA</a>
+                                <a class="nav-link fs-3" href="astrologia.html">ASTROLOGÍA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="gemoterapia.html"
-                                    aria-label="link a gemoterapia">GEMOTERAPIA</a>
+                                <a class="nav-link fs-3" href="gemoterapia.html">GEMOTERAPIA</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link fs-3" href="contact.html"
-                                    aria-label="link a la pagina de contacto">CONTACTO</a>
+                                <a class="nav-link fs-3" href="contact.html">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -59,35 +56,59 @@
         </nav>
     </header>
 
-    <main class="art">
-        <div class="art__nuevos">
-            <h1>Cada mes tenemos un encuentro gratuito para charlar sobre estrellas de la Tierra y del Cielo</h1>
-            <h2>Aqui encontraras los datos de los encuentros y un articulo resumido</h2>
-            <p>Nuestro próximo encuentro será en el mes de Agosto, el tema TRÁNSITOS. Estate atento pronto publicaremos
-                fechas</p>
-        </div>
+    <main>
+        <section class="conexion">
+            <div class="conexion__form">
+                <div class="conexion-box">
+                    <h2>Deja tu mensaje</h2>
+                    <form>
+                        <div class="data-box">
+                            <label for="nombre" class="texto">Nombre</label>
+                            <input type="text" name="nombre">
+                            
+                        </div>
+                        <div class="data-box">
+                            <label for="email" class="texto">Email</label>
+                            <input type="email" name="email">
+                        </div>
+    
+                        <div class="data-box">
+                            <label for="mensaje" class="texto">Escribe tu mensaje</label>
+                            <input type="text" name="mensaje">
+                        </div>
+    
+                        <a href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Submit
+                        </a>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
 
-        <div class="art__novedad">
-            <h2>Nuevo seminario de Gemoastrología</h2>
-            <p>Lunes 7 de Agosto 19hs<br> Tendrá una duración de tres meses, una clase semanal de dos horas de duración<br>Abordaremos el
-                diagnóstico desde la carta natal y como ayudarnos con la energía de los cristales para equilibrar las
-                disonancias de la carta.
-            </p>
-        </div>
+        <section class="botiquin">
+            <h2>Seguime en las redes</h2>
+            
+        </section>
+          
     </main>
 
     <footer>
         <div class="pie">
             <div class="pie__redes">
                 <a href="https://www.facebook.com/claudia.herrera.18400/" target="blank">
-                    <img src="../images/face.png" alt="facebook" aria-label="link a Facebook">
+                    <img src="../images/face.png" alt="facebook" aria-label="seguirme en facebook">
                 </a>
                 <a href="https://www.instagram.com/invites/contact/?i=bpyv6innggnk&utm_content=34p36we "
-                    target="_blank">
-                    <img src="../images/instagram.png" alt="instagram" aria-label="link a Instagram">
+                        target="_blank">
+                    <img src="../images/instagram.png" alt="instagram" aria-label="seguirme en Instagram">
                 </a>
                 <a href="https://www.youtube.com/@ClaudiaLHerrera" target="_blank">
-                    <img src="../images/youtube.png" alt="youtube" aria-label="link a mi canal de youtube">
+                    <img src="../images/youtube.png" alt="youtube" aria-label="seguirme en youtube">
                 </a>
             </div>
         </div>
@@ -95,14 +116,13 @@
         <div class="copy">
             <p>Copyright CLAUDIA HERRERA © 2023</p>
         </div>
-
     </footer>
 
-    <!--script bootstrap-->
+        <!--script bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     <!--script bootstrap-->
-
 </body>
+
 </html>
