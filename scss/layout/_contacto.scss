@@ -1,8 +1,7 @@
 /* Contacto----------------------------------------------------------- */
-.conexion {
-    background-image: url("../images/mapa.jpg");
-}
+
 .cform {
+    background-image: url("../images/mapa.jpg")!important;
     @extend .d-bienv;
     display: flex;
     flex-wrap: wrap;
