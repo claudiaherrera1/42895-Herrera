@@ -473,11 +473,11 @@ p {
 }
 
 /* Contacto----------------------------------------------------------- */
-.cform {
+.conexion {
   background-image: url("../images/mapa.jpg");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+.cform {
   display: flex;
   flex-wrap: wrap;
 }

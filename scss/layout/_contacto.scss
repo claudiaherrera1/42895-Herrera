@@ -1,14 +1,11 @@
 /* Contacto----------------------------------------------------------- */
-
-.cform {
+.conexion {
     background-image: url("../images/mapa.jpg");
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+.cform {
     @extend .d-bienv;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .login-box {
