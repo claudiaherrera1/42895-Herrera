@@ -321,8 +321,13 @@
 
 }
 
-@media only screen and (max-width:400px) {
-    .contact-box {
+@media only screen and (max-width:450px) {
+    .login-box {
         width: 100%;
+        h2 {
+            margin-top: 20px;
+        }
     }
+    
+    
 }
