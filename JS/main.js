@@ -1,5 +1,8 @@
-
+//Se crea carpeta para JS
+//Se corrige errores de la primera entrega
 //Se crea una función constructora para recolectar datos de consultas por estudio de numerologia 
+//Se agregan funciones para calculos 
+//main.js está asociada a astrologia.html
  
 
 function Numeroscopio(nombre, segundoNombre, anio, mes, dia) {
