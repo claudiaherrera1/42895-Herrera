@@ -860,4 +860,35 @@ p {
   justify-content: center;
 }
 
+#title-numerology {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 1.3em;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+#wrapper-input-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#date-input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 200px;
+  height: 40px;
+  font-size: 1.3em;
+}
+
+#wrapper-result-numerology {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 1.7em;
+  font-family: "Lato", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */

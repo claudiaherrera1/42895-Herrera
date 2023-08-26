@@ -79,6 +79,15 @@ function agregarCliente() {
 }
 agregarCliente()
 
+function app (){
+    alert("Bienvenido a su estudio")
+    let loop = true
+    while(loop) {
+        agregarCliente()
+        console.log("Resultados: ", clientes)
+        loop = confirm("¿Deseas realizar otro análisis?")
+    }
+    alert("Gracias por su visita")
+}
 
-
-
+app ()
